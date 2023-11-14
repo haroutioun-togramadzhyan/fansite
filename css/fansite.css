@@ -1,0 +1,479 @@
+
+
+
+@media screen and (max-width: 600px) {
+    .screen-body {
+      padding: 40px;
+    }
+  
+    .screen-body-item {
+      padding: 0;
+    }
+  }
+  
+
+.html, body{
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/* /////////////////////////////////////////// */
+
+/* BACKGROUND VIDEO */
+
+#myVideo {
+    position: relative;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: blur(8px);
+    z-index: -1;
+  }
+
+  .content {
+    position: fixed;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+  }
+
+  .pvid{
+    color: rgb(255, 255, 255);
+  }
+
+  
+  .hvid{
+    color: yellow;
+  }
+/* :///////////////////////////////////// */
+
+.logo{
+    display: flex;
+    margin-top: -8px;
+    margin-left: -12px;
+    margin-right: -12px;
+    background-size: cover;
+    margin-left: auto;
+    margin-right: auto;
+    height: 160px;
+    width: auto;
+}
+
+.navheader{
+    display: flex;
+    flex-wrap: wrap;
+    height: 100px;
+    justify-content: center;
+    background-color: #000000;
+    position: relative;
+    z-index: 1;
+}
+
+.navfooter{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #000000;
+    height: 190px;
+}
+
+header{
+    background: url(https://getwallpapers.com/wallpaper/full/4/8/2/1455865-yellow-and-black-wallpaper-1920x1080-computer.jpg);
+    background-size:cover;
+    height: 160px;
+    width:max-content;
+}
+
+footer{
+    background: url(https://getwallpapers.com/wallpaper/full/4/8/2/1455865-yellow-and-black-wallpaper-1920x1080-computer.jpg);
+    background-size:cover;
+    height: 200px;
+}
+
+
+.x, .ttv{
+
+    height: auto;
+    width: 5vw;
+}
+
+
+body::before {
+    content: "";
+    background-image: url(images\bgvideo.mp4);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    filter: blur(3px);
+
+}
+
+.hmerch{
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    height: 400px;
+}
+
+  /* //////////////////////////////// */
+
+
+  /* ANIMATION H1 */
+  
+  .hmerch{
+    -webkit-animation:alternate;
+    -webkit-animation-name: run;
+    -webkit-animation-duration: 4s;
+    position: relative;
+  }
+  @-webkit-keyframes run {
+    0% {
+      left: 0;
+    }
+    48% {
+      -webkit-transform: rotateY(0deg); 
+    }
+    50% { 
+      left: calc(100% - 100px);
+      -webkit-transform: rotateY(180deg); 
+    }
+    98% {
+      -webkit-transform: rotateY(180deg); 
+    }
+    100% {
+      left: 0;    
+       -webkit-transform: rotateY(0deg);
+    }
+  }
+
+
+/* ///////////////////////////////////////// */
+
+h1{
+  color: #000000;
+}
+
+.hmerch{
+    display:flex;
+    flex-wrap:nowrap;
+    font-size: 100px;
+}
+
+p{
+    color: #000000;
+}
+
+a{
+    color: white;
+}
+
+/* FORMULAIRE EMAIL */
+
+*, *:before, *:after {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body, button, input {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  letter-spacing: 1.4px;
+}
+
+.background {
+  display: flex;
+  min-height: 100vh;
+}
+
+.container {
+  flex: 0 1 700px;
+  margin: auto;
+  padding: 10px;
+}
+
+.screen {
+  position: relative;
+  background: #000000;
+  border-radius: 15px;
+}
+
+.screen:after {
+  content: '';
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  border-radius: 15px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, .4);
+  z-index: -1;
+}
+
+.screen-header {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px;
+  background: rgb(231, 231, 4) ;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.screen-header-left {
+  margin-right: auto;
+}
+
+.screen-header-button {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  margin-right: 3px;
+  border-radius: 8px;
+  background: white;
+}
+
+.screen-header-button.close {
+  background: rgb(0, 0, 0);
+}
+
+.screen-header-button.maximize {
+  background: rgb(0, 0, 0);
+}
+
+.screen-header-button.minimize {
+  background: rgb(0, 0, 0);
+}
+
+.screen-header-right {
+  display: flex;
+}
+
+.screen-body {
+  display: flex;
+}
+
+.screen-body-item {
+  flex: 1;
+  padding: 50px;
+}
+
+.screen-body-item.left {
+  display: flex;
+  flex-direction: column;
+}
+
+.app-title {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  color: yellow;
+  font-size: 26px;
+}
+
+.app-title:after {
+  content: '';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 25px;
+  height: 4px;
+  background: #ffffff;
+}
+
+.app-contact {
+  margin-top: auto;
+  font-size: 8px;
+  color: yellow;
+}
+
+.app-form-group {
+  margin-bottom: 15px;
+}
+
+.app-form-group.message {
+  margin-top: 40px;
+}
+
+.app-form-group.buttons {
+  margin-bottom: 0;
+  text-align: right;
+}
+
+.app-form-control {
+  width: 100%;
+  padding: 10px 0;
+  background: none;
+  border: none;
+  border-bottom: 1px solid #666;
+  color: #ddd;
+  font-size: 14px;
+  text-transform: uppercase;
+  outline: none;
+  transition: border-color .2s;
+}
+
+.app-form-control::placeholder {
+  color: yellow;
+}
+
+.app-form-control:focus {
+  border-bottom-color: #ddd;
+}
+
+.app-form-button {
+  background: none;
+  border: none;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  cursor: pointer;
+  outline: none;
+}
+
+.app-form-button:hover {
+  color: yellow;
+}
+
+
+@media screen and (max-width: 520px) {
+  .screen-body {
+    flex-direction: column;
+  }
+
+  .screen-body-item.left {
+    margin-bottom: 30px;
+  }
+
+  .app-title {
+    flex-direction: row;
+  }
+
+  .app-title span {
+    margin-right: 12px;
+  }
+
+  .app-title:after {
+    display: none;
+  }
+}
+
+/* ////////////////////////////////////// */
+
+
+/* ANIMATIONS GALERIE */
+
+* {
+  box-sizing: border-box;
+}
+
+
+ul {
+  display: flex;
+  list-style-type: none;
+}
+
+li {
+  padding: 0;
+}
+
+img{
+  max-width: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  transition: all 0.2s ease;
+}
+
+ul:is(:hover, :focus-within) img {
+  opacity: calc(0.1 + (var(--active-lerp, 0) * 0.9));
+  filter: grayscale(calc(1 - var(--active-lerp, 0)));
+}
+
+:root {
+  --lerp-0: 1;
+  --lerp-1: 0.5787037;
+  --lerp-2: 0.2962963;
+  --lerp-3: 0.125;
+  --lerp-4: 0.037037;
+  --lerp-5: 0.0046296;
+  --lerp-6: 0;
+}
+
+a {
+  outline-offset: 4px;
+}
+
+li {
+  flex: calc(0.1 + (var(--active-lerp, 0) * 1));
+  transition: flex 0.2s ease;
+}
+
+li:is(:hover, :focus-within) {
+  --active-lerp: var(--lerp-0);
+  z-index: 7;
+}
+li:has( + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li {
+  --active-lerp: var(--lerp-1);
+  z-index: 6;
+}
+li:has( + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li {
+  --active-lerp: var(--lerp-2);
+  z-index: 5;
+}
+li:has( + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li {
+  --active-lerp: var(--lerp-3);
+  z-index: 4;
+}
+li:has( + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li {
+  --active-lerp: var(--lerp-4);
+  z-index: 3;
+}
+li:has( + li + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li + li {
+  --active-lerp: var(--lerp-5);
+  z-index: 2;
+}
+li:has( + li + li + li + li + li + li:is(:hover, :focus-within)),
+li:is(:hover, :focus-within) + li + li + li + li + li + li {
+  --active-lerp: var(--lerp-6);
+  z-index: 1;
+}
+
+
+/* IMAGES ACTU */
+
+.wpulivesearch_results{
+--scroll-percent: 0.5449591280653951;
+--scrollbar-width: 9px;
+-webkit-text-size-adjust: none;
+letter-spacing: 0;
+color: #000;
+accent-color: #fae100;
+text-align: left;
+margin: 0;
+padding: 0;
+border: 0;
+font: inherit;
+font-size: 100%;
+vertical-align: baseline;
+outline: 0;
+background: transparent no-repeat top left;
+}
+
+.Heroic, .game-log{
+  background-attachment: fixed;
+}
